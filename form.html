@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <body>
+    <h1>Profile Form</h1>
+    <form action="/profile" method="POST">
+      <label for="name">Name</label>
+      <input
+        id="name"
+        type="text"
+        name="name"
+        placeholder="Enter your name"
+        minlength="3"
+        maxlength="50"
+        required
+      />
+      <br />
+      <label for="my-age">Age</label>
+      <input
+        type="number"
+        name="age"
+        id="my-age"
+        placeholder="Enter age"
+        min="1"
+        max="100"
+      />
+      <br />
+      <label for="email">Email Address</label>
+      <input type="email" name="email" id="email" required />
+      <br />
+      <label for="phone">Phone number</label>
+      <input type="tel" name="phone" id="phone" value="+9779876540" disabled />
+      <br />
+      <!-- Checkbox: Multi-select -->
+      <label>Hobbies</label>
+      <input type="checkbox" name="hobbies" checked /> Swimming
+      <input type="checkbox" name="hobbies" checked /> Driving
+      <input type="checkbox" name="hobbies" /> Traveling
+      <input type="checkbox" name="hobbies" /> Movies
+      <input type="checkbox" name="hobbies" /> Music
+
+      <br />
+
+      <!-- Radio: Single select -->
+      <label for="">Gender</label>
+      <input type="radio" name="gender" checked />Male
+      <input type="radio" name="gender" />Female
+      <input type="radio" name="gender" />Other
+      <br />
+
+      <label for="docs">File</label>
+      <input
+        type="file"
+        name="docs"
+        id="docs"
+        accept=".jpg,.png,.pdf"
+        multiple
+      />
+      <br />
+
+      <label for="meeting">Meeting date</label>
+      <input type="date" name="" id="meeting" />
+      <input type="time" name="" id="meeting" />
+      <input type="datetime-local" name="" id="meeting" />
+
+      <br />
+      <label for="ratings">Ratings</label>
+      <input
+        type="range"
+        name="ratings"
+        id="ratings"
+        min="1"
+        max="10"
+        step="0.5"
+      />
+
+      <br />
+      <label for="color">Color</label>
+      <input type="color" name="" id="color" />
+
+      <br />
+      <label for="password">Password</label>
+      <input type="password" name="" id="password" />
+
+      <br />
+      <label for="search">Search</label>
+      <input type="search" name="" id="search" list="animals" />
+      <datalist id="animals">
+        <option value="Cat">Cat</option>
+        <option value="Dog">Dog</option>
+        <option value="Cow">Cow</option>
+        <option value="Rabbit">Rabbit</option>
+        <option value="Goat">Goat</option>
+        <option value="Sheep">Sheep</option>
+      </datalist>
+
+      <br />
+      <label for="class">Class</label>
+      <select name="class" id="class">
+        <option value="" disabled selected>Select your class</option>
+        <optgroup label="primary classes">
+          <option value="class1">Class 1</option>
+          <option value="class2">Class 2</option>
+          <option value="class3">Class 3</option>
+          <option value="class4">Class 4</option>
+          <option value="class5">Class 5</option>
+        </optgroup>
+        <optgroup label="secondary classes">
+          <option value="class6">Class 6</option>
+          <option value="class7">Class 7</option>
+          <option value="class8">Class 8</option>
+          <option value="class9">Class 9</option>
+          <option value="class10">Class 10</option>
+        </optgroup>
+      </select>
+
+      <br />
+      <label for="message">Message</label>
+      <textarea name="message" id="message" rows="10" cols="50"></textarea>
+      <!-- <input type="submit" value="Save Profile" /> -->
+
+      <br />
+      <button type="submit">Save Profile</button>
+
+      <input type="image" src="speaker.png" height="40" />
+    </form>
+  </body>
+</html>

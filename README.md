@@ -40,3 +40,21 @@
 - Line break: `br`
 - Divider: `hr`
 - Iframe: `iframe`
+
+5. Table
+
+- `table`
+- `tr`
+- `td`
+- `th`
+- `thead`
+- `tbody`
+- `tfoot`
+
+6. Form
+
+- `form`
+- `input`: text, number, email, tel, checkbox, radio, file, date, time, range, color, password, submit, search
+- `label`
+- `textarea`
+- `select` & `option`
