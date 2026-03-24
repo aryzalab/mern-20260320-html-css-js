@@ -58,3 +58,74 @@
 - `label`
 - `textarea`
 - `select` & `option`
+
+7. Inline & Block elements
+
+- Inline elements occupy only the required width. for e.g, a, img, video, span
+- Block elements occupy covers full width of the screen. for e.g, h1-h6, p, div, li
+
+8. Semantics
+
+- All HTML elements must be in lowercase
+- Use proper elements as per their position and usage
+- Always add `alt` property in the img tag
+- Always add `title` property in button tag esp. icon only button
+- HTML file names must be in kebab case. for e.g `hello-world.html`
+- In each HTML file/page, there must be at least one h1 tag.
+- Always format your code.
+
+## CSS: Cascading Style Sheet
+
+- Website styling like color, font-size, alignment, spacing
+
+**Syntax**
+
+```
+<selector> {
+    property: value;
+    property: value;
+    ...
+}
+
+for e.g;
+
+// Element
+h1 {
+    color: red;
+    text-align: center;
+    font-size: 2rem;
+    ...
+}
+
+// Class
+.title {
+    ...
+}
+
+// Id
+#title {
+    color: green;
+    ...
+}
+```
+
+**Selectors**
+
+1. Element: h1, p, div | Lowest priority
+2. Class: `.title` | Priority: Id > Class > Element
+3. Id: `#title` | Highest priority
+
+**Class VS Id**
+
+- For CSS, always use class
+- For JS, use id
+
+**CSS Usage**
+
+1. Inline
+2. Internal (not used often)
+3. External
+
+### CSS Properties
+
+1. Color, Background Color
