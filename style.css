@@ -1,7 +1,11 @@
-h1 {
+* {
+  margin: 0;
+  padding: 0;
+}
+/* h1 {
   text-align: center;
   letter-spacing: 1rem;
-}
+} */
 
 #title {
   color: teal;
@@ -31,4 +35,87 @@ h3 {
   color: #ff0000; /* 0-9, A, B, C, D, E, F*/
   color: rgba(255, 0, 98, 0.588); /* a-alpha(transparency): 0-1 */
   background-color: rgb(255, 217, 217);
+}
+
+/* Text styles  */
+.title {
+  text-align: center; /* Doesn't work in inline elements */
+  text-decoration: underline wavy;
+  text-transform: capitalize; /* uppercase, lowercase, capitalize */
+  word-spacing: 12px;
+  letter-spacing: 8px;
+  text-shadow: 3px 3px 10px red; /* x-axis y-axis spread color */
+}
+
+.para {
+  text-align: justify; /** right, left, center,  justify */
+  line-height: 1.5;
+}
+
+/* Font styles  */
+.title {
+  font-size: 50px;
+  font-weight: bold;
+  font-style: oblique;
+  font-family: "Roboto";
+}
+
+/* Box Model  */
+.title {
+  /* margin: 10px; */
+  /* margin-top: 10px;
+  margin-bottom: 20px;
+  margin-left: 15px;
+  margin-right: 5px; */
+  margin-inline: 10px; /* margin left-right */
+  margin-block: 20px; /* margin top-bottom */
+  padding: 10px;
+  padding-top: 20px;
+  border: 5px dashed blue; /* size/thickness type color */
+  border-top: 10px dotted green;
+  border-radius: 10px;
+}
+
+/* Display styles */
+.title {
+  display: block; /* inline, block, inline-block, none */
+}
+
+span {
+  display: none;
+}
+
+.card {
+  height: 100px;
+  width: 100px;
+  background-color: rgb(202, 253, 140);
+  border: 1px solid black;
+  font-size: 2rem;
+}
+
+.card.two {
+  height: 150px;
+  width: 150px;
+}
+
+.box {
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* Cross axis alignment */
+  justify-content: center; /* Main axis alignment */
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+ul {
+  margin: 2rem;
+  list-style: square; /* disc, circle, square, none */
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 10px;
+  background-color: azure;
+  padding: 1rem;
 }

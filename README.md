@@ -129,3 +129,24 @@ h1 {
 ### CSS Properties
 
 1. Color, Background Color
+2. Text
+3. Font
+4. Box model: margin, padding, border
+5. Display
+6. Flex
+7. List
+==============
+8. Units
+9. Pseudo-class
+10. Overflow
+11. Position
+12. Table
+13. Form
+14. Icon
+15. Background image
+16. Transform
+17. Animation
+18. Responsive design
+19. Grid
+20. Variables
+21. Misc
