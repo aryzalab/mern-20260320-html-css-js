@@ -7,6 +7,10 @@
   letter-spacing: 1rem;
 } */
 
+html {
+  font-size: 16px;
+}
+
 #title {
   color: teal;
 }
@@ -118,4 +122,79 @@ nav ul {
   gap: 10px;
   background-color: azure;
   padding: 1rem;
+}
+
+/* Units: px (pixel), em (relative to parent), rem (relative to root html), 
+vh (viewing height), vw (viewing width), %, in (inch), cm  */
+.container {
+  height: 50vh;
+  width: 25%;
+  background-color: darkkhaki;
+  font-size: 30px;
+}
+
+.inner-box {
+  height: 50%;
+  width: 100px;
+  background-color: cornflowerblue;
+  font-size: 1.5em;
+  font-size: 1.5rem;
+}
+
+/**
+rem: font-size, margin, padding, gap
+px: border, border-radius, top, left, bottom, right, shadow
+**/
+
+/* Pseudo class: hover, active, focus, checked, disabled, required, first-child, last-child
+nth-child  */
+.submit {
+  padding-inline: 2rem;
+  padding-block: 0.5rem;
+  border-radius: 10px;
+  background-color: cornsilk;
+}
+
+.submit:hover {
+  background-color: darkturquoise;
+  font-weight: bold;
+  border-radius: 0;
+}
+
+.submit:active {
+  background-color: darkolivegreen;
+  transform: scale(0.95);
+}
+
+input:focus {
+  outline: 1px solid red;
+  border: none;
+}
+
+input:disabled {
+  background-color: black;
+}
+
+input:required {
+  border: 1px solid blue;
+}
+
+li:first-child {
+  color: red;
+}
+
+li:last-child {
+  color: green;
+}
+
+li:nth-child(4) {
+  color: aqua;
+}
+
+nav ul li:nth-child(2n) {
+  color: #ff0000;
+}
+
+nav ul li:nth-child(2n-1) {
+  color: blue;
 }
