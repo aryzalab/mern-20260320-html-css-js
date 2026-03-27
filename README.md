@@ -140,13 +140,23 @@ h1 {
 10. Overflow
 11. Position
 12. Table
-==============
 13. Form
 14. Icon
 15. Background image
 16. Transform
-17. Animation
-18. Responsive design
-19. Grid
-20. Variables
+==============
+17. Grid
+18. Animation
+19. Responsive design
+20. Variables   
 21. Misc
+
+# Task
+Design your portfolio page
+
+**Properties**
+- Your image at the top, and rounded
+- Your name with large font size
+- Bio
+- Social contacts with icons
+- Contact form: Name, email, subject, message

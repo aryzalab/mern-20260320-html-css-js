@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      video {
+        height: auto;
+        margin-inline: auto;
+        display: block;
+        width: 100%;
+        position: absolute;
+        z-index: -1;
+      }
+
+      .container {
+        position: relative;
+        height: 100vh;
+      }
+
+      .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 100vh;
+        background: linear-gradient(115deg, #000000e9, #00000041);
+        backdrop-filter: blur(5px);
+      }
+
+      .content {
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        height: 100%;
+        flex-direction: column;
+        max-width: 50%;
+        padding: 2rem;
+        font-family: sans-serif;
+        color: white;
+        position: relative;
+        z-index: 999;
+        gap: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="overlay"></div>
+      <video src="house.mp4" autoplay></video>
+      <div class="content">
+        <h1>Hello world</h1>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat
+          velit quia delectus? Ratione atque nulla quibusdam porro, recusandae
+          odio et voluptate, labore corrupti culpa eius, ullam ipsum iste saepe
+          inventore! Tenetur praesentium corporis, aspernatur animi explicabo
+          vero eveniet aperiam, consectetur itaque ad, repellendus molestias
+          error aliquam atque doloremque laudantium officiis.
+        </p>
+        <button>Learn More</button>
+      </div>
+    </div>
+  </body>
+</html>
