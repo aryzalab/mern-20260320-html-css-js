@@ -144,11 +144,11 @@ h1 {
 14. Icon
 15. Background image
 16. Transform
-==============
 17. Grid
 18. Animation
 19. Responsive design
-20. Variables   
+==============
+20. Variables
 21. Misc
 
 # Task

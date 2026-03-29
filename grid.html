@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .gridbox {
+        background-color: darkseagreen;
+        height: 500px;
+        width: 100%;
+
+        /* grid properties */
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        /* grid-template-columns: 1fr 2fr 1fr 3fr; */
+        align-items: center;
+        column-gap: 2rem;
+        row-gap: 1rem;
+        /* grid-template-areas:
+          "box1 box2 box5 box6"
+          "box3 box3 box3 box7"
+          "box4 box4 box8 box8 "
+          "box9 box10 box11 box11"; */
+      }
+
+      .box {
+        border: 1px solid;
+        background-color: beige;
+        height: 100px;
+        min-width: 100px;
+      }
+
+      .box1 {
+        grid-column: 1/4;
+        /* height: 200px; */
+        /* grid-area: box1; */
+      }
+      .box2 {
+        /* grid-area: box2; */
+      }
+      .box3 {
+        /* grid-area: box3; */
+      }
+      .box4 {
+        /* grid-area: box4; */
+      }
+      .box5 {
+        /* grid-area: box5; */
+      }
+      .box6 {
+        /* grid-area: box6; */
+      }
+      .box7 {
+        /* grid-area: box7; */
+      }
+      .box8 {
+        /* grid-area: box8; */
+      }
+      .box9 {
+        /* grid-area: box9; */
+      }
+      .box10 {
+        /* grid-area: box10; */
+      }
+      .box11 {
+        /* grid-area: box11; */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="gridbox">
+      <div class="box box1">box1</div>
+      <div class="box box2">box2</div>
+      <div class="box box3">box3</div>
+      <div class="box box4">box4</div>
+      <div class="box box5">box5</div>
+      <div class="box box6">box6</div>
+      <div class="box box7">box7</div>
+      <div class="box box8">box8</div>
+      <div class="box box9">box9</div>
+      <div class="box box10">box10</div>
+      <div class="box box11">box11</div>
+    </div>
+  </body>
+</html>
