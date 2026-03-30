@@ -147,7 +147,6 @@ h1 {
 17. Grid
 18. Animation
 19. Responsive design
-==============
 20. Variables
 21. Misc
 

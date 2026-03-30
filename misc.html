@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* --variable-name: value  */
+      :root {
+        --primary-color: #2c5346;
+        --secondary-color: #e4ca83;
+        --text-color: #4c4d4f;
+      }
+
+      .title {
+        color: red;
+      }
+
+      h1 {
+        color: black !important;
+        /* opacity: 0.5; */
+      }
+
+      #title {
+        color: blue;
+      }
+
+      .box {
+        /* background-color: var(--primary-color); */
+        background-image: linear-gradient(
+          45deg,
+          var(--primary-color) 50%,
+          var(--secondary-color),
+          red,
+          #36705f,
+          #4c4d4e
+        ); /* direction, color-1, color-2, ... */
+        padding-block: 5rem;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0);
+        /* opacity: 0.2; */
+      }
+
+      p {
+        color: var(--secondary-color);
+      }
+
+      button {
+        /* background-color: var(--primary-color); */
+        background-image: radial-gradient(
+          red 30%,
+          green,
+          blue,
+          black,
+          orange,
+          var(--primary-color)
+        );
+        color: white;
+        padding: 1rem 5rem;
+      }
+
+      .card {
+        height: 200px;
+        width: 200px;
+        background-image: conic-gradient(red, green, blue, yellow);
+      }
+
+      .mask {
+        font-family: "Segoe UI";
+        font-weight: bolder;
+        font-size: 15rem;
+        text-align: center;
+
+        background-image: url("thailand.webp");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        background-clip: text;
+        color: transparent;
+      }
+
+      .circle {
+        border-radius: 50%;
+        height: 100px;
+        width: 100px;
+        border: 3px solid green;
+
+        background-image: url("thailand.webp");
+        background-size: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <h1 class="title" id="title">Hello world</h1>
+    </div>
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo voluptate
+      unde animi aspernatur sit? Explicabo facilis maxime totam fugit rerum
+      reprehenderit sed modi voluptate quae nulla est voluptatum quisquam,
+      voluptates numquam accusamus aperiam doloremque error similique at, vel
+      itaque. Tempore sequi doloribus doloremque vitae labore quaerat fugiat
+      quia modi quam.
+    </p>
+    <button>Click me</button>
+
+    <div class="card"></div>
+
+    <div class="mask">THAILAND</div>
+
+    <div class="circle">
+      <!-- <img src="speaker.png" alt="" height="200" width="200" /> -->
+    </div>
+  </body>
+</html>
