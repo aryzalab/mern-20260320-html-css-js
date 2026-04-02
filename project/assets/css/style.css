@@ -15,6 +15,10 @@
   --text-light: #4c4d4f;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: var(--background);
 }
@@ -336,6 +340,125 @@ nav a:hover {
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
 }
 
+/* Contact styles */
+.contact-box {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.contact-box .info p {
+  color: var(--text-light);
+  font-size: 0.75rem;
+  margin-block: 1rem;
+}
+
+.contact-box .info a {
+  font-weight: normal;
+  margin: 0.1rem;
+  font-size: 0.9rem;
+  text-decoration: none;
+  display: block;
+  color: var(--text-dark);
+}
+
+.contact-box .info a:hover {
+  color: var(--primary-color);
+}
+
+.contact-box form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  max-width: 500px;
+}
+
+.contact-box form input,
+.contact-box form textarea {
+  width: 100%;
+  background-color: white;
+  border: 1px solid rgb(252, 66, 1, 0.2);
+  border-radius: 1rem;
+  padding: 0.5rem 1rem;
+}
+
+.contact-box form button {
+  background-color: var(--primary-color);
+  border-radius: 1rem;
+  border: none;
+  color: white;
+  padding: 0.5rem 1.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  max-width: fit-content;
+  margin-top: 0.5rem;
+}
+
+.contact-box form button:hover {
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.contact-box form input:focus,
+.contact-box form textarea:focus {
+  outline: 2px solid var(--primary-color);
+}
+
+#signupForm {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+}
+
+.signup-form {
+  align-items: center;
+  background-color: var(--background);
+  border-radius: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  height: max-content;
+  justify-content: center;
+  left: 0;
+  padding: 2rem 3rem;
+  position: fixed;
+  top: 45%;
+  width: 100%;
+}
+
+.signup-form form {
+  margin-top: 1.5rem;
+}
+
+.signup-form input {
+  width: 100%;
+  background-color: white;
+  border: 1px solid rgb(252, 66, 1, 0.2);
+  border-radius: 1rem;
+  padding: 0.5rem 1rem;
+}
+
+.signup-form form button {
+  width: 100%;
+  background-color: var(--primary-color);
+  border: 1px solid rgb(252, 66, 1, 0.2);
+  border-radius: 1rem;
+  padding: 0.5rem 1rem;
+  color: white;
+  margin-top: 1rem;
+}
+
+.signup-form form button:hover {
+  background-color: var(--primary-dark);
+  color: white;
+}
+
+.signup-form .close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: var(--background);
+}
+
 @media (min-width: 512px) {
   .benefits-box {
     grid-template-columns: 1fr 1fr;
@@ -347,6 +470,11 @@ nav a:hover {
 
   .best-seller-box {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .signup-form {
+    left: 25%;
+    width: 50%;
   }
 }
 
@@ -378,6 +506,10 @@ nav a:hover {
     padding-inline: 3rem;
     gap: 2rem;
   }
+
+  .contact-box {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -392,4 +524,27 @@ nav a:hover {
   .featured-box {
     grid-template-columns: repeat(4, 1fr);
   }
+
+  .signup-form {
+    left: 35%;
+    width: 30%;
+  }
+}
+
+[popover] {
+  position-area: bottom;
+  margin: initial;
+}
+
+.cart-items {
+  border: none;
+  background-color: var(--background);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+  padding: 1rem;
+  margin-top: 0.5rem;
+}
+
+.cart-items ul {
+  list-style: none;
 }
