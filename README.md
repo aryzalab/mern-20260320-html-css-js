@@ -131,7 +131,7 @@ h1 {
 1. Color, Background Color
 2. Text
 3. Font
-4. Box model: margin, padding, border
+4. Box model: margin, padding, border, height, width
 5. Display
 6. Flex
 7. List
@@ -159,3 +159,10 @@ Design your portfolio page
 - Bio
 - Social contacts with icons
 - Contact form: Name, email, subject, message
+
+## Tailwind
+
+- CSS Framework
+- Used for building UI rapidly
+- We use predefined utility classes directly in HTML
+- Highly customizable, works in dark mode, JIT (Just in time) compiler for faster builds
