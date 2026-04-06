@@ -5,9 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tailwind</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <style>
+    <style type="text/tailwindcss">
       .test {
         background: linear-gradient(to right, color1, color2, color3);
+      }
+
+      .card {
+        @apply w-40 h-52 bg-green-500 rounded-2xl shadow-xl;
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
     </style>
   </head>
@@ -22,7 +29,7 @@
     </p>
     <!-- Background gradient: bg-gradient-{to-r} from-{color}-{shade} via-{color}-{shade} to-{color}-{shade} -->
     <h2
-      class="bg-gradient-to-r from-red-700 from-[10%] to-[20%] text-transparent to-blue-600 bg-clip-text text-7xl font-bold"
+      class="bg-linear-to-r from-red-700 from-10% to-20% text-transparent to-blue-600 bg-clip-text text-7xl font-bold"
     >
       Hello
     </h2>
@@ -87,6 +94,60 @@
       <div class="h-20 bg-indigo-500">world</div>
       <div class="h-20 bg-cyan-500">Hello</div>
       <div class="h-20 bg-teal-500">world</div>
+    </div>
+
+    <button
+      class="bg-red-500 px-5 py-2 hover:bg-green-600 hover:text-white hover:uppercase focus:bg-blue-500"
+    >
+      Click me
+    </button>
+
+    <p class="h-64 w-64 border-2 border-black overflow-auto">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum vitae
+      aliquam blanditiis fuga facere, sed reprehenderit exercitationem
+      repellendus nihil delectus laboriosam nam corporis voluptas officiis
+      expedita necessitatibus doloremque nesciunt! Perferendis odio dolor
+      reprehenderit. Quas, architecto quaerat. Quibusdam, tempore accusamus
+      minima voluptate maxime illo porro minus. Dolorum incidunt pariatur est
+      molestias autem, similique culpa reiciendis iste libero, neque dolores
+      obcaecati voluptates officiis amet omnis inventore eius blanditiis rerum
+      quia vitae, nulla aliquam? Molestias tempore asperiores aut adipisci iure
+      aperiam minus maiores error quas autem similique, distinctio nobis itaque
+      accusamus saepe sunt magnam. Expedita voluptate sit, at in error unde
+      doloribus blanditiis.
+    </p>
+
+    <!-- Position: absolute, fixed, sticky, relative, static -->
+
+    <div class="relative h-20 w-20 bg-green-800 right-5 top-20">box</div>
+    <div class="sticky h-20 w-full bg-red-800 top-0">box</div>
+    <div class="fixed h-20 w-20 bg-blue-800 top-0 right-0">box</div>
+
+    <div class="h-64 bg-green-500 w-full"></div>
+    <!-- Trasform: traslate, rotate, scale, skew -->
+
+    <div
+      class="h-20 w-20 bg-red-400 -translate-y-10 rotate-45 hover:scale-x-150 hover:skew-y-12 transition duration-500 ease-out"
+    >
+      box
+    </div>
+
+    <div class="h-52 w-52 bg-teal-500 rounded animate-bounce"></div>
+
+    <div class="bg-[url('speaker.png')] h-20 w-full bg-contain bg-no-repeat">
+      hello
+    </div>
+
+    <div class="card">Card</div>
+    <div class="h-52 w-40 rounded-2xl shadow-xl bg-green-100">Card</div>
+    <div class="h-52 w-40 rounded-2xl shadow-xl bg-green-100">Card</div>
+    <div class="h-52 w-40 rounded-2xl shadow-xl bg-green-100">Card</div>
+    <div class="h-52 w-40 rounded-2xl shadow-xl bg-green-100">Card</div>
+
+    <div
+      class="text-red-800 hover:text-blue-500 dark:text-green-800 dark:text-5xl dark:hover:text-yellow-500"
+    >
+      Test this on dark mode
     </div>
 
     <div class="h-screen"></div>
