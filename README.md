@@ -178,15 +178,15 @@ Design your portfolio page
 - NodeJS, Electron.js, React Native, Tensorflow.js, React, Vue
 
 ====================
-1. Conditional statement
-2. Loop
-3. Function
 4. EcmaScript
     - Template literals
     - Spread operator
-    - ...
-5. Array Methods
-6. Misc
+    - Rest operator
+    - Arrow function
+    - Array Methods
+    - Destructing (Array/Object)
+    - String methods
+    - Object methods
 
 ======================
 NodeJS
