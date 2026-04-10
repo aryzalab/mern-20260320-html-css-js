@@ -179,12 +179,7 @@ Design your portfolio page
 
 ====================
 4. EcmaScript
-    - Template literals
-    - Spread operator
-    - Rest operator
-    - Arrow function
-    - Array Methods
-    - Destructing (Array/Object)
+    - Reduce
     - String methods
     - Object methods
 
