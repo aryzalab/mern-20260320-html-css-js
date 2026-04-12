@@ -82,3 +82,81 @@ console.log(values);
 students.sort((a, b) => b.name.localeCompare(a.name));
 
 console.log(students);
+
+// Reduce
+let totalSum = 0;
+
+for (let i = 0; i < list.length; i++) {
+  const item = list[i];
+
+  totalSum = totalSum + item;
+}
+
+console.log(totalSum);
+
+const reducedTotalSum = list.reduce((total, item) => {
+  total = total + item;
+
+  return total;
+}, 0);
+
+console.log(reducedTotalSum);
+
+const myList = [
+  {
+    name: "ram",
+    class: 2,
+  },
+  {
+    name: "sam",
+    class: 3,
+  },
+  {
+    name: "hari",
+    class: 2,
+  },
+  {
+    name: "mohan",
+    class: 3,
+  },
+  {
+    name: "sita",
+    class: 4,
+  },
+];
+
+const groupedList = myList.reduce((acc, item) => {
+  acc[item.class] = acc[item.class] || [];
+  acc[item.class].push(item);
+
+  return acc;
+}, {});
+
+console.log(groupedList);
+
+const cities = [
+  "Dharan",
+  "Kathmandu",
+  "Pokhara",
+  "Dharan",
+  "Dharan",
+  "Pokhara",
+  "Dharan",
+  "Butwal",
+  "Itahari",
+  "Kathmandu",
+];
+
+const citiesCount = cities.reduce((acc, city) => {
+  acc[city] = (acc[city] ?? 0) + 1;
+
+  return acc;
+}, {});
+
+console.log(citiesCount);
+// {
+//   "Dharan":4,
+//   "Kathmandu":1
+//   "Pokhara":2,
+//   "Butwal":1
+// }

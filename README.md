@@ -177,18 +177,25 @@ Design your portfolio page
 - Used to build interactive web pages, API, backend
 - NodeJS, Electron.js, React Native, Tensorflow.js, React, Vue
 
-====================
-4. EcmaScript
-    - Reduce
-    - String methods
-    - Object methods
+## JS Semantics
+
+- Recommended JS files, variables, functions to be in camel case.
+- Variable names, file names : Noun (for eg; user, updatedProduct)
+- Functions, Methods names : Verb (for eg; create, updateProduct)
+- Use singular/plural names based on items in data. (findUsers, findUserById)
+
+=================
+sentence case : Hello world
+snake case: hello_world
+kebab case: hello-world
+camel case: helloWorld
+pascal case: HelloWorld
 
 ======================
 NodeJS
 =========================
-Events
+Modules: Filesystem, event, path, url
 Callback, Promise, Async/Await
-FileSystem
 
 =======================
 React
