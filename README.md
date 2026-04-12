@@ -184,20 +184,27 @@ Design your portfolio page
 - Functions, Methods names : Verb (for eg; create, updateProduct)
 - Use singular/plural names based on items in data. (findUsers, findUserById)
 
-=================
+======================
+
 sentence case : Hello world
 snake case: hello_world
 kebab case: hello-world
 camel case: helloWorld
 pascal case: HelloWorld
 
-======================
+=======================
+
 NodeJS
+
 =========================
+
 Modules: Filesystem, event, path, url
 Callback, Promise, Async/Await
 
 =======================
+
 React
+
 ========================
+
 DOM Manipulation
